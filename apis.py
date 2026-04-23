@@ -17,7 +17,7 @@ client = genai.Client(api_key=my_api_key)
 #note generator
 
 def note_generator(images):
-    propmt = """ Summerize the picture in note format in bangla language at max 100 words , make sure you add necessary markdown differentiate different section """
+    propmt = """ Summerize the picture in note format , make sure you add necessary markdown differentiate different section """
     response = client.models.generate_content(
         model = 'gemini-3-flash-preview',
         contents = [images, ]                           

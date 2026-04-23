@@ -2,9 +2,16 @@ import streamlit as st
 from apis import note_generator, audio_transcription, quiz_generator
 from PIL import Image
 
+
+st.set_page_config(
+    page_title="Image to text",
+    page_icon="🚀",
+    layout="wide"
+)
+
 #title
-st.title("Note Summary and Quiz Generator")
-st.markdown("Upload upto 3 images to generate Note summary and Quizzes")
+st.title("Image to text Tool By Ridoy Islam")
+st.markdown("Upload upto 3 images to generate Note summary")
 st.divider()
 
 
